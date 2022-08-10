@@ -6,7 +6,7 @@ import { Image } from '@chakra-ui/image';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import React from 'react';
 
-function Header() {
+function Body() {
 
   const { colorMode } = useColorMode ();
   const isDark = colorMode === "dark";
@@ -46,4 +46,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Body

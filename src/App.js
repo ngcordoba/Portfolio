@@ -2,7 +2,7 @@ import { Heading, VStack, Flex, Spacer } from '@chakra-ui/layout'
 import { useColorMode } from '@chakra-ui/color-mode'
 import { IconButton } from '@chakra-ui/button'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import Header from "./components/Header"
+import Body from "./components/Body"
 import Social from "./components/Social"
 import Profile from "./components/Profile"
 
@@ -12,6 +12,7 @@ function App() {
   const isDark = colorMode === "dark";
 
   return (
+    // Header
     <VStack p="5">
       <Flex w="100%">
         <Heading
@@ -20,7 +21,8 @@ function App() {
         <IconButton ml={2} size="lg" icon={isDark ? <FaSun/> : <FaMoon/>} onClick={toggleColorMode}></IconButton>
       </Flex>
 
-        <Header></Header>
+        
+        <Body></Body>
         <Social></Social>
         <Profile></Profile>
       
