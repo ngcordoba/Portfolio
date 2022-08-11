@@ -1,9 +1,10 @@
 import { Heading, VStack, Flex, Spacer, } from '@chakra-ui/react'
-import { useColorModeValue } from '@chakra-ui/color-mode'
 import { useColorMode } from '@chakra-ui/color-mode'
 import { IconButton } from '@chakra-ui/button'
 import { FaSun, FaMoon } from 'react-icons/fa'
 import Body from "./components/Body"
+import Social from "./components/Social"
+import About from "./components/About"
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
 
       </Flex>
         <Body></Body>
+        <Social></Social>
+        <About></About>
     </VStack>
     
   );

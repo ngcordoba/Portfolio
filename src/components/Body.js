@@ -1,5 +1,3 @@
-import { IconButton } from '@chakra-ui/button'
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Stack, Circle, Flex, Box, Text} from '@chakra-ui/layout';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { Image } from '@chakra-ui/image';
@@ -37,11 +35,6 @@ function Body() {
                   src='https://avatars.githubusercontent.com/u/70921504?v=4' 
                   alt="Profile image"/>
                   
-          <Box mt={isNotSmallerScreen ? "0" : 16} alignSelf="center">
-            <IconButton size="lg" icon={<FaLinkedin/> } onClick={() => window.open("https://www.linkedin.com/in/ngabrielcordoba/")}> Github </IconButton>
-            <IconButton ml={2} size="lg" icon={<FaGithub></FaGithub>}onClick={() => window.open("https://github.com/ngcordoba")}></IconButton>
-            <IconButton ml={2} size="lg" icon={<FaInstagram></FaInstagram>}onClick={() => window.open("https://www.instagram.com/gabocordoba/")}></IconButton>
-          </Box>
       </Flex>
 
     
