@@ -2,7 +2,7 @@ import { Heading, VStack, Flex, Spacer, } from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/color-mode'
 import { IconButton } from '@chakra-ui/button'
 import { FaSun, FaMoon } from 'react-icons/fa'
-import Body from "./components/Body"
+import Header from "./components/Header"
 import Social from "./components/Social"
 import About from "./components/About"
 
@@ -26,7 +26,7 @@ function App() {
         </IconButton>
 
       </Flex>
-        <Body></Body>
+        <Header></Header>
         <Social></Social>
         <About></About>
     </VStack>
